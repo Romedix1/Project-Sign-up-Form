@@ -1,0 +1,268 @@
+*
+{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* outline: solid;    */
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
+
+#container
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.float
+{
+    float: left;
+}
+
+.content
+{
+    float: right;
+}
+
+.clear
+{
+    clear: both;
+}
+
+#left-content
+{
+    width: 30%;
+    height: 100%;
+    background-image: url(Images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    position: fixed;
+    color: #FFFFFF;
+}
+
+#right-content
+{
+    width: 70%;
+    height: 100%;
+    background-color: #F9FAFB;
+}
+
+#logo-box
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 15px 0px 15px 0px;
+    font-family: Norse;
+    font-size: 7.5rem;
+    display: flex;
+    align-items: center;
+}       
+
+#logo
+{
+    width: 6rem ;
+}
+
+#img-author-box
+{
+    position: relative;
+    bottom: 20px;
+}
+
+.author:last-child
+{
+    margin-right: 3rem;
+}
+
+.author-box-underline
+{
+    text-decoration: underline;
+}
+
+#main-text-box
+{
+    padding: 20px 50px 20px 50px;
+}
+
+#form-box
+{
+    padding: 20px 50px 40px 50px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 24px 0px 24px 7px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 24px 0px 24px 7px rgba(66, 68, 90, 1);
+    box-shadow: 24px 0px 24px 7px rgba(66, 68, 90, 1);
+    
+}
+
+#main-text
+{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#bottom-main-text,
+#bottom-main-text>i
+{
+    margin: 40px 0px 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.block
+{
+    display: block;
+}
+
+label
+{
+    font-size: 20px;
+    margin: 10px 40px 20px 50px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"]
+{
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    width: 360px;
+    height: 10px;
+    padding: 8px 10px 8px 10px;
+    margin: 10px 40px 20px 50px;
+    border: 2px solid #AAAAAA;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phone"]:focus,
+input[type="password"]:focus
+{
+    border: 2px solid #253f77;
+}
+
+#form-header
+{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+#submit-form
+{
+    background-color: #596D48;
+    padding: 15px 45px 15px 45px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#submit-form:hover
+{
+ background-color: #1a290e ;
+}
+
+#bottom-box
+{
+    padding: 20px 50px 40px 50px;
+}
+
+#log-in-text
+{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#log-in-link
+{
+    color: #5A6E49;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#log-in-link:hover
+{
+    color: #0b5e23;
+    text-decoration: none;
+
+}
+
+@media (max-width: 900px)
+{
+    #left-content
+    {
+        width: 100%;
+        height: 350px;
+        position:static !important;
+    }
+    #right-content
+    {
+        width: 100%;
+    }
+    .content
+    {
+        display: block;
+    }
+        #logo-box
+    {
+        margin-top: 10rem;
+        height: 20rem;
+    }
+    #logo
+    {
+        width: 9rem;
+    }
+    #img-author-box
+    {
+        position: relative;
+        bottom: 5rem;
+        font-size: 2rem;
+    }
+    .author
+    {
+        font-size: 3rem;
+    }
+    .author:last-child
+    {
+        margin-right: 12rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    input[type="password"]
+    {
+        width: 70rem;
+        padding-right: 0px;
+    }
+    #form-box
+    {
+    padding: 20px 10px 40px 1px;
+    }
+    .inputs
+    {
+        width: 1rem;
+    }
+    .float
+    {
+        margin: 0px;
+        margin-left: 0px;
+    }
+    label
+    {
+        margin-right: 0px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Sign-up Form</title>
+</head>
+<body>
+    <div id="container">
+        <div class="content" id="left-content">
+            <div id="logo-box">
+                <img id="logo" src="Images/odin-lined.png" alt="odin-logo">ODIN
+            </div>
+            <div class="content" id="img-author-box">
+                <p class="author">Photo by <span  class="author author-box-underline">Halie West</span> on <span class="author author-box-underline">Unsplash</span></p>
+            </div>
+        </div>
+
+        <div class="content" id="right-content">
+            <div id="main-text-box">
+                <p id="main-text"> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+
+                <p id="bottom-main-text">You <i>know</i> you want to</p>
+            </div>
+
+            <div id="form-box">
+                <h2 id="form-header">Let's do this!</h2>
+            <form>
+                <div id="inputs">
+                    <div class="float">
+                        <label for="first-name">First name</label>
+                        <input  minlength="2" type="text" class="block" id="first-name" required>
+                    </div>
+                    <div class="float">
+                        <label for="last-name">Last name</label>
+                        <input minlength="2" type="text" class="block" id="last-name" required>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="float">
+                        <label for="email">Email</label>
+                        <input minlength="6" type="email" class="block" id="email" required>
+                    </div>
+                    <div class="float">
+                        <label for="phone-number">Phone number</label>
+                        <input minlength="9" type="phone" class="block" id="phone-number" required>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="float">
+                        <label for="password">Password</label>
+                        <input minlength="8" type="password" class="block" id="password" required>
+                    </div>
+                    <div class="float">
+                        <label for="check-password">Check password</label>
+                        <input minlength="8" type="password" class="block" id="check-password" required>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+
+            <div id="bottom-box">
+                <button type="submit" id="submit-form">Create Account</button>
+            </form>
+                <p id="log-in-text">Already have an account? <a id="log-in-link" href="">Log in</a></p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
